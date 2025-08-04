@@ -1,0 +1,124 @@
+html <!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Enhanced Form</title> 
+    </head> 
+    <body> 
+        <header> 
+            <h1>Enhanced Form Submission</h1> 
+            <nav> 
+                <ul> 
+                    <li><a href="#form-section">Form Section</a></li> 
+                    <li><a href="#table-section">Table Section</a></li> 
+                    <li><a href="#media-section">Media Section</a></li> 
+                </ul> 
+            </nav> 
+        </header> 
+        <main> 
+            <section id="form-section"> 
+                <h2>Complete HTML5 Form</h2> 
+                <form id="user-form" action="" method="post" autocomplete="on" novalidate> 
+                    <fieldset> 
+                        <legend>Personal Information</legend> 
+                        <label for="name">Full Name: *</label> 
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name" autocomplete="name"> 
+                        <label for="email">Email: *</label> <input type="email" id="email" name="email" required placeholder="your.email@example.com" autocomplete="email"> 
+                        <label for="phone">Phone Number:</label> 
+                        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> 
+                        <label for="birthdate">Birth Date:</label> 
+                        <input type="date" id="birthdate" name="birthdate"> 
+                    </fieldset> 
+                    <fieldset> 
+                        <legend>Account Details</legend> 
+                        <label for="username">Username: *</label> 
+                        <input type="text" id="username" name="username" required placeholder="Choose a username" pattern="[A-Za-z0-9]{5,}"> 
+                        <label for="password">Password: *</label> 
+                        <input type="password" id="password" name="password" required placeholder="Minimum 8 characters" minlength="8"> 
+                        <label for="website">Personal Website:</label> 
+                        <input type="url" id="website" name="website" placeholder="https://example.com"> 
+                    </fieldset> 
+                    <fieldset> 
+                        <legend>Preferences</legend> 
+                        <label>Interests:</label> 
+                        <ul> 
+                            <li> 
+                                <input type="checkbox" id="interest-tech" name="interests" value="technology"> 
+                                <label for="interest-tech">Technology</label> 
+                            </li> 
+                            <li> 
+                                <input type="checkbox" id="interest-sports" name="interests" value="sports"> 
+                                <label for="interest-sports">Sports</label> 
+                            </li> 
+                            <li> 
+                                <input type="checkbox" id="interest-art" name="interests" value="art"> 
+                                <label for="interest-art">Art</label> 
+                            </li> 
+                        </ul> 
+                        <label for="country">Country:</label> 
+                        <select id="country" name="country"> 
+                            <option value="">-- Select Country --</option> 
+                            <option value="us">United States</option> 
+                            <option value="ca">Canada</option> 
+                            <option value="uk">United Kingdom</option> 
+                        </select> 
+                        <label for="comments">Additional Comments:</label> 
+                        <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments here..."></textarea> 
+                    </fieldset> 
+                    <fieldset> 
+                        <legend>Readonly Example</legend> 
+                        <label for="user-id">User ID:</label> 
+                        <input type="text" id="user-id" name="user-id" value="Sylvia-2025" readonly> 
+                        <p>This field cannot be modified</p> 
+                    </fieldset> 
+                    <button type="submit">Submit Form</button> 
+                    <button type="reset">Reset Form</button> 
+                </form> 
+            </section> 
+            <section id="table-section"> 
+                <h2>Sample Data Table</h2> 
+                <table> 
+                    <caption>User Statistics</caption> 
+                    <thead> 
+                        <tr> 
+                            <th>User ID</th> 
+                            <th>Name</th> 
+                            <th>Registration Date</th> 
+                        </tr> 
+                    </thead> 
+                    <tbody> 
+                        <tr> 
+                            <td>Sylvibae112</td> 
+                            <td>Sylvia Carles</td> 
+                            <td>2023-01-15</td> 
+                        </tr> 
+                        <tr> 
+                            <td>Jame189</td> 
+                            <td>Jane Smith</td> 
+                            <td>2023-02-20</td> 
+                        </tr> 
+                        <tr> 
+                            <td>Robert556</td> 
+                            <td>Robert Johnson</td> 
+                            <td>2023-03-10</td> 
+                        </tr> 
+                    </tbody> 
+                </table>
+            </section> 
+            <section id="media-section"> 
+                <h2>Media Examples</h2> 
+                <figure> 
+                    <img src="https://via.placeholder.com/600x300" alt="Sample Image Placeholder"> 
+                    <figcaption>Example of an image with caption</figcaption> 
+                </figure> 
+                <audio controls> 
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg"> Your browser does not support the audio element. 
+                </audio> 
+            </section> 
+        </main> 
+        <footer> 
+            <p>&copy; 2025 Sylvia Form Example. All rights reserved.</p> 
+        </footer> 
+    </body> 
+</html>
